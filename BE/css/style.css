@@ -58,4 +58,8 @@ header {
   color: #4CAF50;
   text-decoration: none;
 }
-
+a. btn btn-danger{
+   display: inline-block;
+   text-align: right;
+   width: 100%;
+}

@@ -11,17 +11,22 @@ if(!$_SESSION['UserID'])
 <html>
 <title>Shopping Site</title>
 <head>
+
+<link rel="stylesheet" href="css/style.css">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
 </head>
 <body>
+<header>
+	<h1>Welcome to Bubz shopping</h1>
+</header>
+
+<h6 align="right"><a href="logout.php" class="btn btn-danger" role="button">Logout</a> </h6> 
+<strong> <?php echo $_SESSION['UserID']?>, here are your offers</strong>
 <center>
-	<header>
-		<h1 class="bg-primary">Best Offers...!!</h1>
-		<h6 align="right"><a href="logout.php" class="btn btn-danger" role="button">Logout</a> </h6> 
-		
-	</header><br>
+	<marquee behavior="alternate" scrollamount="20"><h1 class="bg-primary">Best Offers...!!</h1></marquee>
+	
 	<div class="container">
 	 
 	<div class="row">
